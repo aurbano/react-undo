@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import Component from 'react-cs';
+// import Component from 'react-undo';
 
 export default class Examples extends React.PureComponent {
 
@@ -8,7 +8,7 @@ export default class Examples extends React.PureComponent {
     return (
       <div>
         <h2>
-          <a href="https://github.com/aurbano/react-component-starter/blob/master/example/app/src/ExamplePage.js" className="right">
+          <a href="https://github.com/aurbano/react-undo/blob/master/example/app/src/ExamplePage.js" className="right">
             <code>&lt;Source&gt;</code>
           </a>
           Example
