@@ -1,7 +1,7 @@
 {
-  "name": "react-cs",
+  "name": "react-undo",
   "version": "1.0.0",
-  "description": "Starter project for released React components",
+  "description": "React Component for easy undo/redo on any component's props",
   "main": "dist/index.min.js",
   "files": [
     "dist"
@@ -23,26 +23,29 @@
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "flow": "flow status",
-    "changelog": "github_changelog_generator -u aurbano -p react-component-starter",
+    "changelog": "github_changelog_generator -u aurbano -p react-undo",
     "start": "cd example/app && npm start",
     "deploy": "cd example/app && npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aurbano/react-component-starter.git"
+    "url": "git+https://github.com/aurbano/react-undo.git"
   },
   "keywords": [
     "react",
     "reactjs",
     "component",
-    "library"
+    "library",
+    "history",
+    "undo",
+    "redo"
   ],
   "author": "Alejandro U. Alvarez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aurbano/react-component-starter/issues"
+    "url": "https://github.com/aurbano/react-undo/issues"
   },
-  "homepage": "https://github.com/aurbano/react-component-starter#readme",
+  "homepage": "https://github.com/aurbano/react-undo#readme",
   "peerDependencies": {
     "prop-types": "^15.0",
     "react": "^^15.0.0-rc || ^15.0"
