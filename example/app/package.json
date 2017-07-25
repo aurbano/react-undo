@@ -1,0 +1,23 @@
+{
+  "name": "react-component-starter-example",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://aurbano.eu/react-component-starter/",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-undo": "file:../../",
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "build:less": "./node_modules/.bin/lessc src/example.less src/example.css",
+    "start": "npm run build:less && react-scripts start",
+    "build": "npm run build:less && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postinstall": "linklocal"
+  },
+  "devDependencies": {
+    "less": "^2.7.2"
+  }
+}

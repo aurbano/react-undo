@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+- '6'
+script:
+- npm test
+after_success:
+- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+- cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage
+env:
+  global:
+  - secure: a3UWS5CwGDiOwZNhFvYGO83jZP/8FJFtiilWB6kYbOuetrlgeUU6H+pkakmBEwoqcqlTJPbjqNTD2y3OV5jNQmpxYzkLvsQG7yH3yme4pL42BDablfVywuyU8SaOW2ODQHjTm+I5DV68GSGFMgTFANXnQjM2IUq9Li7ewpJHIJ6OQHY8JUqx2zRdSTrehNfWtzKgo8vuaDEShvV+mSDeV26bHb3InDhDyzqUSsvTIGHyyVZMcs5M8TVC7gGk7ofEt++gkNenc35ZLjQKI/6ddA2CQ0h6h1/z2iW6nbSiqyTc4gHS6tRKHyCahWBUM3VN5x8fdVm9fkhVdnaBZ+uzmbxPQaDfHUL7rGHlEL3uynP3WMHfWuWpAbhO0RNQbTVg36npTg1ZlwK43ejNU3N/gwNSd9IBjvkkeplx+hIPMVnTH0TUGzAYIlHNzNPSocWvSnoSz++WY9XhnrfDKaXxdMsq/aU3eHcyBchzRILjENLvlRzV5b9SK1bafvoBUaYSev/7l5/FIP3QknZ8eSdNd/xUHTjqd3ToJgNBqDiWsYmEG8VBOmQLxTRRA/5L6f+iHYFlKRwORhoiVuzv86zt6dYxcMZIknN5wa/kLuo6xqHFdRKHbLi8Xp0fRxznjOp8762YsrWODh2+fu5rSS5JztRf2L4/yrT/At5+TyAzXvg=
