@@ -6,7 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/aurbano/react-undo/badge.svg?branch=master)](https://coveralls.io/github/aurbano/react-undo?branch=master)
 [![npm](https://img.shields.io/npm/dm/react-undo.svg)](https://www.npmjs.com/package/react-undo)
 [![npm](https://img.shields.io/npm/l/react-undo.svg)](https://www.npmjs.com/package/react-undo)
-[![Codacy grade](https://img.shields.io/codacy/grade/e2589a609bdc4c56bd49c232a65dab4e.svg)](https://www.codacy.com/app/aurbano/react-undo)
+[![Codacy grade](https://img.shields.io/codacy/grade/3aab39d8540f4d1cba401b071fc1b446.svg)](https://www.codacy.com/app/aurbano/react-undo)
 
 Most undo/redo solutions use redux, which is amazing *except* when you need something a bit simpler.
 
