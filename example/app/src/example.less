@@ -247,3 +247,50 @@ h6, .h6 {
 .virtual-scroll {
   z-index: 1;
 }
+
+.card {
+  border: solid 1px #ccc;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+  margin: 1rem 0;
+  padding: 1em 1em;
+  border-radius: .28571429rem;
+}
+
+// Forms
+// ------------------------------
+
+button, input {
+  border: solid 2px #ccc;
+  background: white;
+  margin: 0 0.5em;
+  color: @link-color;
+  padding: 0.5em 1em;
+  border-radius: 1em/3;
+  outline: none;
+  transition: all 0.1s ease-in;
+
+  &:disabled {
+    border-color: #ccc;
+    color: #777;
+    background: #efefef !important;
+    cursor: not-allowed;
+  }
+}
+
+button {
+  background-color: fade(@link-color, 70);
+  color: #fff;
+  border-color: @link-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: fade(@link-color, 90);
+  }
+}
+
+input {
+  &:focus {
+    border-color: @link-color;
+  }
+}

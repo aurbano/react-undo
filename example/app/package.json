@@ -6,8 +6,8 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-undo": "file:../../",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "react-undo": "file:../../"
   },
   "scripts": {
     "build:less": "./node_modules/.bin/lessc src/example.less src/example.css",
