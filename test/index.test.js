@@ -2,12 +2,13 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Component from '../src/index';
-import Counter from '../example/app/src/Counter';
+import Input from '../example/app/src/Input';
 
 const defaultProps = {
-  as: Counter,
+  as: Input,
   props: {
-    count: 0,
+    val: 'Initial value',
+    update: () => {},
   },
   trackProps: ['count'],
   onChange: () => {},
