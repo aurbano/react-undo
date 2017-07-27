@@ -1,6 +1,6 @@
 {
   "name": "react-undo",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "React Component for easy undo/redo on any component's props",
   "main": "dist/index.js",
   "files": [
